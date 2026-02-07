@@ -1,0 +1,102 @@
+Base styles and box-sizing
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Use a standard, clean font */
+}
+
+body {
+    background-color: #f4f7f6; /* Light gray/green background for a fresh feel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+/* Header styling */
+h1 {
+    color: #2c3e50; /* Dark blue/gray header text */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 500px; /* Max width for better readability on large screens */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    color: #34495e; /* Slightly lighter text for labels */
+    margin-bottom: 5px;
+    display: block; /* Make label take up full width for better structure */
+}
+
+/* Input field styling */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7; /* Light border */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #2ecc71; /* Green border on focus */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #2ecc71; /* Vibrant green for the button */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60; /* Slightly darker green on hover */
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px); /* Little press effect on click */
+}
+
+/* Styling for the prediction result */
+h2 {
+    margin-top: 30px;
+    padding: 15px 25px;
+    background-color: #ecf0f1; /* Light background for the result */
+    color: #2c3e50;
+    border-left: 5px solid #3498db; /* Blue accent bar */
+    border-radius: 5px;
+    font-size: 1.8em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Utility for breaking line (optional, using flex gap is better) */
+br {
+    display: none; /* Hide the <br> tags as flexbox/grid handles spacing */
+}

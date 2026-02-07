@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+ <style> .result{
+    font-size: 36px;
+font-weight: bold;
+
+margin-top: 20px;}
+
+ </style>
+</head>
+
+<body style="text-align:center; font-family:Arial; margin-top:50px;">
+
+    <h1 style="font-size:40px">🌾 CROP RECOMMENDATION RESULT</h1>
+
+    <h2 class="result">
+         Recommended Crop: {{ crop|title }}
+    </h2>
+
+    <hr style="width:50%">
+
+    <h3>📊 Your Input Values</h3>
+
+    <p>Nitrogen: {{ N }} kg/ha</p>
+    <p>Phosphorus: {{ P }} kg/ha</p>
+    <p>Potassium: {{ K }} kg/ha</p>
+    <p>Temperature: {{ temp }} °C</p>
+    <p>Humidity: {{ humidity }} %</p>
+    <p>pH: {{ ph }}</p>
+    <p>Rainfall: {{ rainfall }} mm</p>
+
+    <br><br>
+
+    <a href="/">
+        <button style="padding:10px 20px;">BACK</button>
+    </a>
+
+</body>
+</html>
